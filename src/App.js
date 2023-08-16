@@ -4,11 +4,11 @@ import {
 } from 'react-router-dom';
 import routes from './routes';
 import Layout from './components/layout/Layout';
-import Home from './components/pages/Home';
-import Bookings from './components/pages/Bookings';
-import ConfirmedBooking from './components/pages/Bookings/ConfirmedBooking';
-import NotFound from './components/pages/NotFound';
-import UnderConstruction from './components/pages/UnderConstruction';
+import Home from './pages/Home';
+import Bookings from './pages/Bookings';
+import ConfirmedBooking from './pages/Bookings/ConfirmedBooking';
+import NotFound from './pages/NotFound';
+import UnderConstruction from './pages/UnderConstruction';
 
 const App = () => {
   return (
