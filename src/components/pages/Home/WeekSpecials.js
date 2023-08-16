@@ -3,7 +3,7 @@ import bruschettaImage from './assets/bruschetta.jpg';
 import greekSaladImage from './assets/greek-salad.jpg';
 import lemonDessertImage from './assets/lemon-dessert.jpg';
 import './WeekSpecials.css';
-import pages from '../../../utils/pages';
+import routes from '../../../routes';
 import MealCard from './MealCard';
 
 const meals = [
@@ -36,11 +36,11 @@ const WeekSpecials = () => {
     <section className="container grid week-specials">
       <div className="week-specials-header">
         <h2>This week specials!</h2>
-        <Link className="button-primary" to={pages.get('orderOnline').path}>
+        <Link className="button-primary" to={routes.get('orderOnline').path}>
           Online Menu
         </Link>
       </div>
-      {meals.map((meal, index) => 
+      {meals.map((meal, index) =>
         <MealCard key={index} meal={meal} />
       )}
     </section>
